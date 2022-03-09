@@ -35,6 +35,7 @@
         else 
         {
             echo "<script>alert('Record insert failed ')</script>";
+            echo "";
         }
         $con->close();
     }
@@ -110,6 +111,7 @@
                         </div>
                     </div>
                 </form>
+                <a class="link" href="login.php">Login</a>
             </div>
         </div>
     </body>

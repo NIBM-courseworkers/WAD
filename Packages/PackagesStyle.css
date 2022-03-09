@@ -11,13 +11,17 @@
     color: rgb(74, 150, 238);
 }
 *{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     text-transform: capitalize;
     outline: none; border:none;
     text-decoration: none;
     transition: all .2s linear;
+    
+}
+body{
+  background: #333;
 }
 
 html{
@@ -33,24 +37,20 @@ section{
 header{
     position: fixed;
     top:0; left: 0; right:0;
-    background: rgb(39, 144, 230);
+    background: #333;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
 }
-header .logo{   
+header .buttons{   
     font-size: 2.5rem;
     font-weight: bolder;
     color:rgb(253, 253, 253);
     text-transform: uppercase;
 }
-header .logo span{
-    text-transform: uppercase;
-    color: #4AF225;
-    font-weight: 900;
-}
+
 
 
 
@@ -122,7 +122,7 @@ header .logo span{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fcfcfc;
+    background: #333;
     
     
     
@@ -212,7 +212,7 @@ header .logo span{
 .heading span{
     font-size: 3.5rem;
     background: rgb(39, 144, 230);
-    color: #4AF225;
+    color: #fff;
     border-radius: .5rem;
     padding: .2rem 1rem;
 }
@@ -266,9 +266,10 @@ header .logo span{
     flex:1 1 30rem;
     border-radius: .9rem;
     overflow: hidden;
-    box-shadow: 0 1rem 2rem rgba(8,0,0,.1);
+    box-shadow: 0 1rem 2rem #eee;
     padding: 10px;
     margin-top: 10px;
+    background: #29d9d5;
 }
 .packages .box-container .box img{
     height: 25rem;
@@ -310,7 +311,7 @@ header .logo span{
 .services .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap:1.8rem;
   }
   
 .services .box-container .box{
@@ -318,6 +319,8 @@ header .logo span{
     border-radius: .5rem;
     padding:1rem;
     text-align: center;
+    
+    
   }
   
 .services .box-container .box i{
@@ -333,7 +336,7 @@ header .logo span{
   
 .services .box-container .box p{
     font-size: 1.5rem;
-    color:#666;
+    color:rgb(255, 255, 255);
     padding:1rem 0;
   }
   
@@ -400,7 +403,7 @@ header .logo span{
   .review .box{
     padding:2rem;
     text-align: center;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    box-shadow: 0 1rem 2rem #eee;
     border-radius: .5rem;
   }
   
@@ -413,7 +416,7 @@ header .logo span{
   }
   
   .review .box h3{
-    color:#333;
+    color:rgb(253, 253, 253);
     font-size: 2.5rem;
   }
   
@@ -429,57 +432,3 @@ header .logo span{
   }
 /*review end*/
 
-/*footer start*/
-.footer{
-    background:rgb(255, 255, 255);
-  }
-  
-  .footer .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-  }
-  
-  .footer .box-container .box{
-    padding:1rem 0;
-    flex:1 1 25rem;
-  }
-  
-  .footer .box-container .box h3{
-    font-size: 2.5rem;
-    padding:.7rem 0;
-    color:rgb(5, 5, 5);
-  }
-  
-  .footer .box-container .box p{
-    font-size: 1.5rem;
-    padding:.7rem 0;
-    color:rgb(7, 7, 7);
-  }
-  
-  .footer .box-container .box a{
-    display: block;
-    font-size: 1.5rem;
-    padding:.7rem 0;
-    color:rgb(8, 8, 8);
-  }
-  
-  .footer .box-container .box a:hover{
-    color:var(--orange);
-    text-decoration: underline;
-  }
-  
-  .footer .credit{
-    text-align: center;
-    padding:2rem 1rem;
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: normal;
-    color:rgb(12, 12, 12);
-    border-top: .1rem solid rgba(255,255,255,.2);
-  }
-  
-  .footer .credit span{
-    color:#12e70b;
-  }
-/*footer end*/
